@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 # Connect to the remote server using SSH
-ssh ubuntu@34.203.38.22
+ssh -i /home/lukoye/0-RSA_public_key ubuntu@34.203.38.22
