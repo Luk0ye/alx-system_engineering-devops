@@ -1,0 +1,21 @@
+<h>What happens when you type google.com in your browser.</h>
+
+Here’s an explanation of what happens when you type https://www.google.com into your browser and press Enter:
+
+DNS Request: The process begins with a DNS (Domain Name System) request. Your browser asks a DNS server for the IP address associated with www.google.com. The DNS server responds with the IP address.
+
+TCP/IP: Next, your browser initiates a TCP (Transmission Control Protocol) connection with the server at that IP address. The Internet Protocol (IP) is responsible for delivering packets from the source host to the destination host based on the IP addresses.
+
+Firewall: Firewalls monitor and control incoming and outgoing network traffic based on predetermined security rules. In this case, the firewall checks the request to make sure it’s safe and allows it to reach the server.
+
+HTTPS/SSL: The ‘https’ in the URL indicates that the connection should be secure, using SSL (Secure Sockets Layer) or its successor, TLS (Transport Layer Security). These protocols encrypt the data that is sent back and forth, ensuring that the information remains private.
+
+Load-balancer: If the site is large and gets a lot of traffic, a load balancer might be used to distribute requests across a number of servers. The load balancer decides which server should handle the request.
+
+Web Server: The web server receives the request and checks for the desired resource. For www.google.com, it would be the main search page.
+
+Application Server: The web server passes the request to an application server if dynamic content or server-side processing is needed. The application server runs scripts, interacts with databases if necessary, and constructs an HTML document.
+
+Database: If the request requires fetching data from a database, the application server will make that request, get the data, and incorporate it into the HTML document.
+
+Finally, the HTML document is sent back to your browser over the TCP/IP connection. Your browser renders the HTML into the webpage that you see.
